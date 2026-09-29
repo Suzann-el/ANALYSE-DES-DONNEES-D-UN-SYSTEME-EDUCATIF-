@@ -1,34 +1,51 @@
-# ANALYSE-DES-DONNEES-D'UN-SYSTEME-EDUCATIF
-Vous êtes Data Scientist dans une start-up de la EdTech, nommée academy, qui propose des contenus de formation en ligne pour un public de niveau lycée et université.
+# 🎓 Analyse du système éducatif mondial — Expansion internationale
 
-Votre entreprise EdTech
-Votre entreprise EdTech
-Mark, votre manager, vous a convié à une réunion pour vous présenter le projet d’expansion à l’international de l’entreprise. Il vous confie une première mission d’analyse exploratoire, pour déterminer si les données sur l’éducation de la banque mondiale permettent d’informer le projet d’expansion.
+> Analyse exploratoire des données éducatives de la Banque mondiale pour identifier les marchés prioritaires d'une plateforme EdTech.
 
-Voici les différentes questions que Mark aimerait explorer, que vous avez notées durant la réunion :
+---
 
-Quels sont les pays avec un fort potentiel de clients pour nos services ?
-Pour chacun de ces pays, quelle sera l’évolution de ce potentiel de clients ?
-Dans quels pays l'entreprise doit-elle opérer en priorité ?
-Votre mission
-Mark vous a donc demandé de réaliser une analyse pré-exploratoire de ce jeu de données. Il vous a transmis cet email à la suite de la réunion :
+## 🎯 Contexte
 
-Hello,
+Dans le cadre d'un projet d'expansion internationale d'une start-up EdTech, ce projet analyse les données éducatives mondiales pour répondre à une question stratégique : **quels pays représentent le plus fort potentiel de clients et méritent d'être ciblés en priorité ?**
 
-Les données de la Banque mondiale sont disponibles à l’adresse suivante :
+---
 
-https://datacatalog.worldbank.org/dataset/education-statistics
+## ⚙️ Ce que fait le projet
 
-Ou en téléchargement direct à ce lien.
+- **Audit qualité** — évaluation des données manquantes, doublons, cohérence des indicateurs
+- **Exploration** — description des 4 000+ indicateurs disponibles, sélection des variables pertinentes
+- **Analyse géographique** — calcul des indicateurs statistiques clés (moyenne, médiane, écart-type) par pays et par bloc géographique
+- **Identification des marchés** — classement des pays selon leur potentiel (taux de scolarisation, évolution démographique, accès à Internet...)
+- **Visualisations** — cartes et graphiques pensés pour un public décisionnel non technique
 
-Je te laisse regarder la page d'accueil qui décrit le jeu de données. En résumé, l’organisme “EdStats All Indicator Query” de la Banque mondiale répertorie 4000 indicateurs internationaux décrivant l’accès à l’éducation, l’obtention de diplômes et des informations relatives aux professeurs, aux dépenses liées à l’éducation... Tu trouveras plus d'info sur ce site :
+---
 
-http://datatopics.worldbank.org/education/
+## 🔍 Questions explorées
 
-Pour la pré-analyse, pourrais-tu :
+- Quels pays concentrent le plus grand nombre de lycéens et étudiants ?
+- Quelle est l'évolution projetée de ce potentiel sur les prochaines années ?
+- Quels marchés combinent fort potentiel et accessibilité (infrastructure numérique) ?
 
-Valider la qualité de ce jeu de données (comporte-t-il beaucoup de données manquantes, dupliquées ?)
-Décrire les informations contenues dans le jeu de données (nombre de colonnes ? nombre de lignes ?)
-Sélectionner les informations qui semblent pertinentes pour répondre à la problématique (quelles sont les colonnes contenant des informations qui peuvent être utiles pour répondre à la problématique de l’entreprise ?)
-Déterminer des ordres de grandeurs des indicateurs statistiques classiques pour les différentes zones géographiques et pays du monde (moyenne/médiane/écart-type par pays et par continent ou bloc géographique)
-Ton travail va nous permettre de déterminer si ce jeu de données peut informer les décisions d'ouverture vers de nouveaux pays. On va partager ton analyse avec le board, alors merci de soigner la présentation et de l'illustrer avec des graphiques pertinents et lisibles !
+---
+
+## 🛠️ Stack
+
+`Python` `Pandas` `NumPy` `Matplotlib` `Seaborn` `Plotly`
+
+---
+
+## 📁 Structure du projet
+
+```
+├── notebooks/
+│   └── analyse_exploratoire.ipynb   # Analyse complète et visualisations
+└── README.md
+```
+
+---
+
+## 📂 Données
+
+Dataset **EdStats** de la Banque mondiale — [datacatalog.worldbank.org](https://datacatalog.worldbank.org/dataset/education-statistics)
+
+Plus de 4 000 indicateurs internationaux : taux de scolarisation, diplomation, dépenses éducatives, données enseignants — couvrant la quasi-totalité des pays du monde.
